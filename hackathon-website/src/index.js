@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Timeline from './Components/Timeline/Timeline'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Timeline/>
   </React.StrictMode>,
   document.getElementById('root')
 );
