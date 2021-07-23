@@ -7,8 +7,12 @@ function Timeline() {
         <article className={"timeline-container"}>
             {data.map( (data, key) => {
                 return(
-                    <div key={key} className={"timeline-card"}>
-                        <span className={"timeline-event-bullet"}>{data.event_date}</span>
+                    <div key={key} className={"timeline-item"}>
+                        <span className={"timeline-event-bullet"}>
+                            {data.event_date}
+                            <br/>
+                            {data.event_time}
+                        </span>
                         <span className={"timeline-event-name"}>{data.event_name}</span>
                     </div>
                 );

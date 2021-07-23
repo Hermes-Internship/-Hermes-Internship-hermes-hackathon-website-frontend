@@ -5,34 +5,73 @@
     --grey-light: #e5e5e5;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .timeline-container {
-    display: flex;
-    flex-direction: column;
     position: relative;
     margin-left: 15%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    /*padding-right: 30px;*/
+    position: relative;
+    margin-bottom: 3.529vw; /* computed as 15px for a 425px viewport width (mobile) */
 }
 
 .timeline-event-bullet {
+    position: relative;
     color: var(--black);
-    font-size: 23px;
+    font-size: 5.412vw; /* computed as 23px for a 425px viewport width (mobile) */
     border: 2px solid var(--red);
-    border-radius: 10px;
+    border-radius: 2vw;
     padding: 3px;
-    margin-right: 20px;
-    box-shadow: 4px 4px 15px 0 rgba(100, 100, 100, 0.7);
-    display: inline-block;
-    width: 25%;
+    box-shadow: 4px 4px 10px 0 rgba(100, 100, 100, 0.7);
     text-align: center;
+}
 
+/* Vertical bar */
+.timeline-event-bullet:not(:last-child):after {
+    background-color: #e17b77;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, calc(100% - 3.529vw + 2px) );
+    top: 100%;
+    width: 4px;
+    height: 3.529vw; /* computed as 15px for a 425px viewport width (mobile) */
 }
 
 .timeline-event-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
     color: var(--black);
-    font-size: 23px;
+    font-size: 5.412vw; /* computed as 23px for a 425px viewport width (mobile) */
     border: 2px solid var(--red);
     border-radius: 10px;
     padding: 3px;
-    display: inline-block;
     text-align: center;
+    left: 4.706vw; /* computed as 20px for a 425px viewport width (mobile) */
+}
+
+/* Horizontal bar */
+.timeline-event-name::after {
+    background-color: #e17b77;
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 4.706vw; /* computed as 20px for a 425px viewport width (mobile) */
+    top: 50%;
+    right: 100%;
+    transform: translate(calc(-100% + 4.706vw - 2px), -50%); /* calc(width of name-card + length of bar - name-card border size) */
 }
