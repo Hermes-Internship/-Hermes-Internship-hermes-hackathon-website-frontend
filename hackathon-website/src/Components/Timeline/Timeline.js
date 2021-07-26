@@ -1,7 +1,6 @@
 import React from 'react'
 import './Timeline.css'
 import {data} from './data'
-
 function Timeline() {
     return (
         <article className={"timeline-container"}>
@@ -18,8 +17,6 @@ function Timeline() {
                 );
             })}
         </article>
-
 )
 }
-
 export default Timeline;

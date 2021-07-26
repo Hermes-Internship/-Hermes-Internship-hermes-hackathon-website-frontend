@@ -32,5 +32,7 @@ export const data = [
         event_date : "10.10.2021",
         event_time : "17:30",
         event_name : "alt event",
-    },
+    }
+
+
 ];
