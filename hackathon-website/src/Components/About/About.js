@@ -1,11 +1,9 @@
 import './About.css'
 import React from 'react';
-
 function About() {
     return (
         <article>
             <h1 className={"heading"}>Despre</h1>
-
             <div id={"about-container"}>
                 <section className={"about-section"}>
                     <h2 className={"subheading"}>Ce este hermesHackathon?</h2>
@@ -16,7 +14,6 @@ function About() {
                         înconjurător.
                     </p>
                 </section>
-
                 <section className={"about-section"}>
                     <h2 className={"subheading"}>Publicul țintă</h2>
                     <p>
@@ -24,7 +21,6 @@ function About() {
                         pasionat de programare și vrea să contribuie la o societate mai bună.
                     </p>
                 </section>
-
                 <section className={"about-section"}>
                     <h2 className={"subheading"}>Cum decurge hermesHackathon?</h2>
                     <p>
@@ -34,40 +30,29 @@ function About() {
                         primi sfaturi și vor fi îndrumați să-și construiască cea mai bună versiune a aplicației lor.
                     </p>
                 </section>
-
             <section id={"topics-panel"}>
-
                 <h2>Teme</h2>
-
                 <div className={"row"}>
                     <figure className={"topic col-sm"}>
                         <img src={""} alt={"Online Education"}/>
                         <figcaption>Online Education</figcaption>
                     </figure>
-
                     <figure className={"topic col-sm"}>
                         <img src={""} alt={"Smart Agriculture"}/>
                         <figcaption>Smart Agriculture</figcaption>
                     </figure>
-
                     <figure className={"topic col-sm"}>
                         <img src={""} alt={"Remote Work"}/>
                         <figcaption>Remote Work</figcaption>
                     </figure>
-
                     <figure className={"topic col-sm"}>
                         <img src={""} alt={"Medical Soft"}/>
                         <figcaption>Medical Soft</figcaption>
                     </figure>
                 </div>
-
             </section>
-
             </div>
-
-
         </article>
     )
 }
-
 export default About;
