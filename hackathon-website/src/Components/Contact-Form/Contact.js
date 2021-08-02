@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css'
-
 function Contact() {
     return (
         <div className={"contact-card"}>
@@ -18,8 +17,6 @@ function Contact() {
                 <button id={"submit-button"}>Trimite</button>
             </div>
         </div>
-
     )
 }
-
 export default Contact

@@ -4,7 +4,6 @@
     --grey: #606161;
     --grey-light: #e5e5e5;
 }
-
 .contact-card {
     background-color: var(--red);
     color: var(--grey-light);
@@ -15,7 +14,6 @@
     text-align: center;
     padding-bottom: 65px;
 }
-
 .contact-form {
     background-color: white;
     color: var(--grey);
@@ -24,7 +22,6 @@
     padding-right: 5%;
     box-shadow: 10px 10px 15px 0px rgba(50, 50, 50, 0.6);
 }
-
 .contact-form > img {
     width: 60%;
     margin-top: 50px;
@@ -34,13 +31,11 @@
     transform: translateX(-50%);
     position: relative;
 }
-
 .input-container {
     display: grid;
     grid-template-columns: auto;
     margin-top: 110px;
 }
-
 #email, #subject {
     font-size: 24px;
     border-top: none;
@@ -51,20 +46,16 @@
     align-self: flex-start;
     padding: 10px 0;
 }
-
 #email {
     margin-bottom: 25px;
 }
-
 #subject {
     margin-bottom: 40px;
 }
-
 #message {
     font-size: 24px;
     width: calc(95% - 10px + 2px); /*95% because of the 5% padding of .contact-form, 10px from the padding of textarea and 2px border*/
 }
-
 #message > textarea {
     border: 2px solid var(--red);
     display: block;
@@ -75,7 +66,6 @@
     font-size: 20px;
     color: var(--grey);
 }
-
 #submit-button {
     background-color: var(--red);
     color: var(--grey-light);
@@ -90,38 +80,31 @@
     transform: translateX(-50%);
     position: relative;
 }
-
 @media (min-width: 576px) {
     .contact-card > h1 {
         font-size: 55px;
         padding-bottom: 65px;
     }
-
     .contact-form {
         padding-left: 10%;
         padding-right: 10%;
     }
-
     .contact-form > img {
         width: 10%;
     }
-
     .input-container {
         grid-template-columns: auto auto;
         grid-column-gap: 7%;
     }
-
     #email, #subject {
         width: 100%;
     }
-
     #message {
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 2;
         width: 100%;
     }
-
     #message > textarea {
         margin-top: 10px;
     }
