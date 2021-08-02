@@ -83,6 +83,7 @@ body {
         align-self: flex-start;
         justify-content: flex-start;
         display: flex;
+        margin-left: 15%;
     }
     .timeline-item:nth-child(odd){
         align-self: flex-start;
