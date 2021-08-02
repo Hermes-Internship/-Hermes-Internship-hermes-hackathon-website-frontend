@@ -7,14 +7,10 @@
 
 * {
     box-sizing: border-box;
-
 }
-
 body {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 }
-
 .timeline-container {
     position: absolute;
     margin-top: 20px;
@@ -24,9 +20,10 @@ body {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .timeline-item {
-    margin-left: 15%;
+    /*margin-left: 15%;*/
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -70,7 +67,6 @@ body {
     justify-content: center;
     left: 20px; /* computed as 20px/4.706vw for a 425px viewport width (mobile) */
 }
-
 /* Horizontal bar */
 .timeline-event-name::after {
     background-color: var(--red);
@@ -82,40 +78,33 @@ body {
     right: 100%;
     transform: translate(calc(-100% + 20px - 2px), -50%); /* calc(width of name-card + length of bar - name-card border size) */
 }
-
 @media(min-width: 576px) {
     .timeline-item{
         align-self: flex-start;
         justify-content: flex-start;
         display: flex;
     }
-
     .timeline-item:nth-child(odd){
         align-self: flex-start;
         /*justify-content: flex-start;*/
     }
-
     .timeline-item:nth-child(odd) .timeline-event-name {
         position: relative;
         left: calc(-100% - 20px);
         /*right: calc(100% - 20px - 2px);*/
     }
-
     /* Horizontal Bar */
     .timeline-item:nth-child(odd) .timeline-event-name::after {
         left: calc(100% + 4px);
 
     }
-
     /*! * Vertical bar * !*/
     .timeline-item:nth-child(odd):not(:last-child):after {
         /*left: 50%;*/
     }
-
     .timeline-event-bullet{
         position: relative;
     }
-
     .timeline-item:nth-child(odd) .timeline-event-bullet {
         right: auto;
         /*left: 35%;*/
