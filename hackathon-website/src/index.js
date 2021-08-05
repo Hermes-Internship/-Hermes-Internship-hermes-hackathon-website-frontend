@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Timeline from './Components/Timeline/Timeline'
 import reportWebVitals from './reportWebVitals';
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 ReactDOM.render(
   <React.StrictMode>
     <About/>
+    <Timeline/>
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
