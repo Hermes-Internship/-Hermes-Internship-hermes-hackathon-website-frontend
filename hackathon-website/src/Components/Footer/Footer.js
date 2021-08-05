@@ -1,11 +1,11 @@
-import './Footer.css';
 import React from "react";
+import styles from './Footer.module.css';
 function Footer() {
     return (
         <footer>
-            <h1 id={"contact-heading"} className="col-sm-12"><strong>Contact</strong></h1>
+            <h1 id={`${styles.contact_heading}`} className="col-sm-12"><strong>Contact</strong></h1>
             <div className={"row"}>
-                <div id={"address-info"} className={"col-sm-4"}>
+                <div id={`${styles.address_info}`} className={"col-sm-4"}>
                     <span><strong>Adresă:</strong></span>
                     <br/>
                     <span>Cantina Hasdeu,</span><br/>
@@ -14,24 +14,24 @@ function Footer() {
                     <span>Cluj-Napoca</span><br/>
                     <span>Romania</span><br/>
                 </div>
-                <div id={"email-info"} className={"col-sm-4"}>
+                <div id={`${styles.email_info}`} className={"col-sm-4"}>
                     <span><strong>Email:</strong></span>
                     <br/>
                     <span>hackathon@societatahermes.com</span>
                 </div>
-                <div id={"socialmedia-info"} className={"col-sm-4"}>
+                <div id={`${styles.socialmedia_info}`} className={"col-sm-4"}>
                     <span><strong>Social Media</strong></span>
                     <br/>
-                    <div id={"socialmedia-icons"}>
+                    <div id={`${styles.socialmedia_icons}`}>
                         <img src="../.." alt="fb"/>
                         <img src="../.." alt="it"/>
                     </div>
                 </div>
             </div>
-            <div id={"logo-container"} className={"col-sm-12"}>
+            <div id={`${styles.logo_container}`} className={"col-sm-12"}>
                 <span>Un eveniment marca:</span>
                 <br/>
-                <img id={"logo"} src={""} alt={"logo hermes"} />
+                <img id={`${styles.logo}`} src={""} alt={"logo hermes"} />
             </div>
         </footer>
     )
