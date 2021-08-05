@@ -1,4 +1,4 @@
-.parteneri_titlu {
+.parteners_title {
   font-size: 30px;
   color: var(--red);
   margin: 20px 10px 4% 5%;
@@ -11,49 +11,49 @@
   border-radius: 4%;
 }
 
-.parteneri {
+.partners {
   height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 2% 0 7%;
+  padding: 0 2% 3% 7%;
 }
 
-.partener1 {
+.partner1 {
   height: 36%;
   width: 80%;
 }
 
-.partener2 {
+.partner2 {
   height: 33%;
   width: 70%;
 }
 
-.partener3 {
+.partner3 {
   height: 30%;
   width: 60%;
 }
 
 @media (min-width: 769px) {
-  .parteneri_titlu {
+  .parteners_title {
     margin: 20px 10px 2% 2%;
   }
-  .parteneri {
+  .partners {
     height: 30vh;
     flex-direction: row;
     align-items: flex-end;
-    margin-left: 2%;
+    padding-left: 2%;
   }
   .box {
     margin: 0 0 0 2%;
   }
-  .partener1 {
+  .partner1 {
     height: 100%;
   }
-  .partener2 {
+  .partner2 {
     height: 90%;
   }
-  .partener3 {
+  .partner3 {
     height: 80%;
   }
 }
