@@ -5,6 +5,9 @@ import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
 import MainView from "./Components/MainView/MainView";
 import Parteners from "./Components/Parteneri/Partners";
+import Timeline from "./Components/Timeline/Timeline";
+import About from "./Components/About/About";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -23,7 +26,10 @@ const App = () => {
       <SideDrawer show={sideDrawerOpen} />
       {sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null}
       <MainView />
+      <About />
       <Parteners />
+      <Timeline />
+      <Footer />
     </div>
   );
 };
