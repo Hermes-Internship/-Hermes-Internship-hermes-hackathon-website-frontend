@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './Footer.module.css';
+import {SocialIcon} from "react-social-icons";
 function Footer() {
     return (
         <footer>
@@ -8,9 +9,9 @@ function Footer() {
                 <div id={`${styles.address_info}`} className={"col-sm-4"}>
                     <span><strong>Adresă:</strong></span>
                     <br/>
-                    <span>Cantina Hasdeu,</span><br/>
-                    <span>Complex Studentesc Hasdeu,</span><br/>
-                    <span>Bogdan Petriceicu Hasdeu street, number 45,</span><br/>
+                    <span>Cantina Hașdeu,</span><br/>
+                    <span>Complex Studențesc Hașdeu,</span><br/>
+                    <span>Bogdan Petriceicu Hașdeu street, number 45,</span><br/>
                     <span>Cluj-Napoca</span><br/>
                     <span>Romania</span><br/>
                 </div>
@@ -23,15 +24,15 @@ function Footer() {
                     <span><strong>Social Media</strong></span>
                     <br/>
                     <div id={`${styles.socialmedia_icons}`}>
-                        <img src="../.." alt="fb"/>
-                        <img src="../.." alt="it"/>
+                        <SocialIcon className={styles.social_icon} url={"https://www.facebook.com/societateahermes/"} network={"facebook"}></SocialIcon>
+                        <SocialIcon className={styles.social_icon} url={"https://www.instagram.com/societatea.hermes/"} network={"instagram"}></SocialIcon>
                     </div>
                 </div>
             </div>
             <div id={`${styles.logo_container}`} className={"col-sm-12"}>
                 <span>Un eveniment marca:</span>
                 <br/>
-                <img id={`${styles.logo}`} src={""} alt={"logo hermes"} />
+                {/*<img id={`${styles.logo}`} src={"https://res.cloudinary.com/dpwd5h80b/image/upload/c_scale,w_768/v1628240944/Hermes-Original-SubText-White_cv5vyr.png"} alt={"logo hermes"} />*/}
             </div>
         </footer>
     )

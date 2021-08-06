@@ -33,6 +33,10 @@ footer {
 #socialmedia_icons {
     margin: 5px 0px;
 }
+
+.social_icon {
+    margin-right: 5px;
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 576px) {
     #contact_heading {
@@ -52,9 +56,6 @@ footer {
     }
     #socialmedia_info {
         text-align: center;
-    }
-    #socialmedia_icons {
-        margin: 5px 0px;
     }
     #logo_container {
         text-align: center;

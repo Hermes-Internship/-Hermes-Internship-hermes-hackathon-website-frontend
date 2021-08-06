@@ -1,5 +1,5 @@
 .timeline_container {
-    position: absolute;
+    position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -76,13 +76,13 @@
         align-self: flex-start;
         /*justify-content: flex-start;*/
     }
-    .timeline_item:nth-child(odd) .timeline-event-name {
+    .timeline_item:nth-child(odd) .timeline_event_name {
         position: relative;
         left: calc(-100% - 20px);
         /*right: calc(100% - 20px - 2px);*/
     }
     /* Horizontal Bar */
-    .timeline_item:nth-child(odd) .timeline-event-name::after {
+    .timeline_item:nth-child(odd) .timeline_event_name::after {
         left: calc(100% + 4px);
 
     }
@@ -90,10 +90,10 @@
     .timeline_item:nth-child(odd):not(:last-child):after {
         /*left: 50%;*/
     }
-    .timeline_event-bullet{
+    .timeline_event_bullet{
         position: relative;
     }
-    .timeline_item:nth-child(odd) .timeline-event-bullet {
+    .timeline_item:nth-child(odd) .timeline_event_bullet {
         right: auto;
         /*left: 35%;*/
         justify-content: flex-start;
